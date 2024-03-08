@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* HOMEPAGE */
+    h3 {
+        position:absolute;
+        top:10%;
+        font-size: 90px;
+        margin-left:35% ;
+        font-family: "komet", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-top: 0px; 
+    }
+    
+
+/* home/learn/about position */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+          font-style: normal;
+        margin-top: 0px; 
+  
+    
+}
+/* home/learn/about */
+.navbar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(25, 110, 99);
+    color: rgb(231, 255, 233);
+    opacity: 100%;
+    text-decoration: none;
+    position: relative;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "komet", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-left: 50px;
+}
+.navbar a:hover {
+    background-color: rgb(172, 207, 146);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container img {
+    width: 65%;
+top:0%;
+    display: block;
+    margin: 0 auto; 
+}
+
+    
+
+
+
+     /* FIRSTPAGE */
+    /* pagesetup*/
+/* pagesetup*/
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+   
+    position: relative;
+}
+  
+/* buttons to view chess piece in different colour */
+.color-toggle {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(25, 110, 99);
+    position: absolute;
+    color:rgb(231, 255, 233);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 55%;
+    font-family: "komet", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    
+}
+.color-toggle:hover {
+    background-color: rgb(172, 207, 146);
+}
+
+.color-toggle.clicked:hover {
+    background-color: rgb(231, 255, 233);
+    color:rgb(25, 110, 99);   
+}
+     /* arrows */
+     .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: rgb(25, 110, 99);
+        color: rgb(231, 255, 233);
+        font-size: 20px;
+        transition: background-color 0.3s, color 0.3s;
+        font-weight: 500;
+        
+    }
+    .nav-button.left {
+        left: 10px;
+    }
+    .nav-button.right {
+        right: 10px;
+    }
+    .nav-button:hover {
+        background-color: rgb(172, 207, 146);
+    }
+/* bodytext */
+body {
+    background-color: rgb(231, 255, 233);
+    color: rgb(25, 110, 99);
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+/* KING/chess piece names */
+#main-text {
+    top: 25%; 
+    transform: translate(0%, 0%);
+    color:   rgb(25, 110, 99);
+    position: absolute;
+    left: 42.5%;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px; 
+    font-family: "komet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}  
+.image-text {
+    position: absolute;
+    top: 37%; 
+    left: 43%; 
+    transform: translateY(-0%);
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: "komet-sc", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body.black-mode {
+    background-color: rgb(25, 110, 99);;
+    color: #accf92;
+}
+/* next button */
+.next-button {
+    position: absolute;
+    top: 47.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px; 
+    font-family: "komet", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 10px 1px; 
+    background-color: rgb(25, 110, 99);
+    color: rgb(231, 255, 233);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    width: 295px;
+    height: 160px; 
+    text-align: center;
+    white-space: normal; 
+}
+
+.first-word {
+    font-size: 40px;
+   font-family: "komet", sans-serif;
+        font-weight: 00;
+        font-style: normal; 
+}
+.next-button span {
+    display: block; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.next-button:hover {
+    background-color: #accf92 ;
+    color:  rgb(25, 110, 99);
+    
+}
+
+
+
+
+
+
+/* SECONDPAGE */
+
+main2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0s, color 0.3s;
+    position: relative;
+}
+/* SETUP */
+
+/*#image board*/
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+img.larger-image {
+    max-width: 50%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for other chess pieces... */
+
+.image-container2{
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 35%;
+    position: absolute;
+    top: 20%;
+
+    
+}
+img.small-image {
+    max-width: 50%;
+    margin: 20px;
+    align-items: center;
+    
+
+    justify-content: flex-start;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* LASTPAGE */
+     main3{
+     max-width: 1505px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    transition: background-color 0s, color 0.3s;
+    position: relative;
+     }
+main3 .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: 36%;
+}
+main3 img.larger-image {
+    max-width: 100%;
+    margin: 0 auto; 
+    display: block; 
+}
+main3 #main-text-3 {
+    color: rgb(25, 110, 99);
+    position: absolute;
+    top: 10%; 
+    transform: translate(0%);
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-right: 40%;
+    font-family: "komet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.win-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 45%;
+    left: 25%; 
+    color:  rgb(25, 110, 99); 
+}
+.win-button {
+    padding: 10px;
+    color:  rgb(25, 110, 99);  
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s; 
+    font-size: 24px;
+    font-family: "komet-sc", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 8px;
+    top:40%;
+
+
+}
+.win-button:hover {
+    background-color: rgb(172, 207, 146);
+}
+#win-info {
+    font-size: 16px;
+    color: rgb(25, 110, 99) ;
+    margin-top: 0%; 
+    line-height: 1.5; 
+    font-size: 20px;
+    margin-right: 50%;
+    left: 10%;
+    position: absolute;
+    font-family: "komet-sc", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+
+.back-button {
+    background-color: rgb(25, 110, 99) ; 
+    color:  rgb(231, 255, 233);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    left:40%;
+    border-radius: 8px;
+    font-family: "komet-sc", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+}
+
+
+.back-button:hover {
+    background-color: rgb(172, 207, 146);
+    color:  rgb(231, 255, 233);}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/mnl5czm.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS - Home</title>
+    <h3>CHESS 101</h3>
+    <link rel="stylesheet" href="rwa.css">
+    <style></style>
+    <script src="rwa.js" defer></script>
+</head>
+
+
+
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <nav class="navbar">
+            <a href="#" id="homeButton" class="nav-link">Home</a>
+<a href="#" id="learnButton" class="nav-link" onclick="redirectToLearnPage()">Learn</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="bg-slide">
+            <img src="pics/home.png" alt="Chess Image">
+        </div>
+    </div>
+
+    <main>
+        <button class="nav-button left" onclick="showPrevious()">←</button>
+        <h1 id="main-text" class="content-text">KING</h1>
+
+        <div class="image-container2">
+            <img src="pics/kingdark.png" alt="Description of your image" class="small-image" id="main-image">
+        </div>
+        <p class="image-text" id="image-description">The king can move in any direction, one square at a time. A king cannot move to a square that is under attack by the opponent. A player loses the match when the king is placed into checkmate, which would lead to an unavoidable capture on the opponent’s next turn.</p>
+        <button class="nav-button right" onclick="showNext()">→</button>
+        <button class="color-toggle" onclick="toggleBackgroundColor()">Opponent</button>
+    </main>
+
+    <main2>
+        <div class="image-container">
+            <button class="next-button" onclick="showNextStep()">
+                <span class="first-word">SETUP</span>
+            </button>
+            <img src="pics/s.png" alt="Description of your new image" class="larger-image" id="main-image-2">
+        </div>
+    </main2>
+
+    <main3>
+        <p id="main-text-3" class="content-text">HOW TO WIN</p>
+        <div class="image-container">
+            <img src="pics/knock.png" alt="Description of your new image" class="larger-image" id="main-image-3">
+        </div>
+        <div class="win-buttons">
+            <button class="win-button" onclick="showCheckInfo()">Check</button>
+            <button class="win-button" onclick="showCheckmateInfo()">Checkmate</button>
+            <button class="win-button" onclick="showStalemateInfo()">Stalemate</button>
+        </div>
+        <p id="win-info" class="image-text"></p>
+
+        <div id="body-text" style="display: none;"></div>
+    </main3>
+  
+
+</body>
+
+</html>
